@@ -1,0 +1,206 @@
+/* inicio configuração */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,html{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+
+}
+
+/* fim configuração */
+
+header{
+    position: relative;
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* inicio imagens */
+
+    .logo{
+
+        position: relative;
+        width: 220px;
+        height: 96px;
+
+
+    }
+    header .flores{
+        
+        width: 45%;
+        position: absolute;
+        
+    }
+    header .flores2{
+        
+        transform: rotateY(0.5turn);   
+    }
+    header .imagem{
+        margin: auto;
+        width: 63%;
+        position: relative;
+    }
+    header .divchinelos{
+        
+        width: 100%;
+        position: absolute;
+        
+    }
+    header .chinelos{
+
+    width: 100%;
+    position: absolute;
+
+    }
+    header .homemaranha{
+
+    width: 38%;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+
+    }
+    header .ben10{
+
+        width: 19%;
+        left: 0px;
+        top: 17px;
+        z-index: 0;
+        transform: rotatez(-53deg);
+    }
+    header .batmam{
+
+        width: 18%;
+        right: 0px;
+        top: 18px;
+        z-index: 0;
+        transform: rotatez(53deg);
+
+    }
+
+/* fim imagens */
+
+/* inicio menu */
+
+    header .menu{
+
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    height: 50px;
+    }
+    header .menu ul{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        height: 40px;
+        gap: 10px;
+        align-items: end;
+    
+    }
+    header .menu ul li{
+
+        list-style: none;
+        border-radius: 10px 10px 0px 0px;
+        width: 100px;
+        height: 25px;
+        padding: 5px;
+        text-align: center;
+        z-index: 2;
+        transition: height 800ms, background-color 800MS;
+        transform-origin: bottom;
+
+        &:hover{
+
+            height: 35px;
+            cursor: pointer;
+            background-color:red;
+
+        }
+    }
+    header .menu ul li a{
+
+        text-decoration: none;
+        color: black;
+
+    }
+
+/* fim menu */
+
+/* inicio pesquisa */
+.pesquisar{
+    position: absolute;
+    display: flex;
+    width: 197px;
+    gap: 4px;
+    right: 5px;
+    bottom: 0;
+}
+header .input{
+
+border: none;
+box-shadow: 2px 2px 25px black;
+
+}
+
+
+
+header .divlupa{
+
+    position: relative; 
+
+    width: 20px;
+    height: 20px;
+
+}
+header .divlupa:hover .lupa{
+
+    border-color: red;
+
+
+}
+header .divlupa:hover  .lupa::before{
+
+    border-color: red;
+
+
+}
+    header .lupa{
+
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 3px solid black;
+        border-radius: 50px;
+
+    }
+    header .lupa::before{
+
+        content: '';
+        position: absolute;
+        width: 5px;
+        background-color: black;
+        transform: rotatez(45deg);
+        top: 11px;
+        left: 8px;
+        border: 2px solid black;
+        border-radius: 0px 50px 50px 0px;
+
+    }
+
+/* fim pesquisa */
