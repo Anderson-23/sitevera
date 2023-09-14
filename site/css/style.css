@@ -26,6 +26,29 @@ header{
     align-items: center;
 
 }
+/* faixa divisoria */
+
+header .faixa{
+
+width: 100vw;
+height: 50px;
+position: absolute;
+bottom: -26px;
+background-image: url(../imagens/faixa-floral.webp);
+background-position: center center;
+background-size: cover;
+z-index: 3;
+border: 2px solid black;
+}
+/* header .faixa img{
+
+
+height: 35px;
+
+
+} */
+
+
 
 
 /* inicio imagens */
@@ -142,65 +165,62 @@ header{
 /* fim menu */
 
 /* inicio pesquisa */
-.pesquisar{
-    position: absolute;
-    display: flex;
-    width: 197px;
-    gap: 4px;
-    right: 5px;
-    bottom: 0;
-}
-header .input{
-
-border: none;
-box-shadow: 2px 2px 25px black;
-
-}
-
-
-
-header .divlupa{
-
-    position: relative; 
-
-    width: 20px;
-    height: 20px;
-
-}
-header .divlupa:hover .lupa{
-
-    border-color: red;
-
-
-}
-header .divlupa:hover  .lupa::before{
-
-    border-color: red;
-
-
-}
-    header .lupa{
-
-        content: '';
+    .pesquisar{
         position: absolute;
-        width: 15px;
-        height: 15px;
-        border: 3px solid black;
-        border-radius: 50px;
+        display: flex;
+        width: 197px;
+        gap: 4px;
+        right: 5px;
+        bottom: 0;
+    }
+    header .input{
+
+    border: none;
+    box-shadow: 2px 2px 25px black;
 
     }
-    header .lupa::before{
+    header .divlupa{
 
-        content: '';
-        position: absolute;
-        width: 5px;
-        background-color: black;
-        transform: rotatez(45deg);
-        top: 11px;
-        left: 8px;
-        border: 2px solid black;
-        border-radius: 0px 50px 50px 0px;
+        position: relative; 
+
+        width: 20px;
+        height: 20px;
 
     }
+    header .divlupa:hover .lupa{
+
+        border-color: red;
+
+
+    }
+    header .divlupa:hover  .lupa::before{
+
+        border-color: red;
+
+
+    }
+        header .lupa{
+
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border: 3px solid black;
+            border-radius: 50px;
+
+        }
+        header .lupa::before{
+
+            content: '';
+            position: absolute;
+            width: 5px;
+            background-color: black;
+            transform: rotatez(45deg);
+            top: 11px;
+            left: 8px;
+            border: 2px solid black;
+            border-radius: 0px 50px 50px 0px;
+
+        }
 
 /* fim pesquisa */
